@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Hedvig Letters Sans", sans-serif;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(39, 41, 44);
+    justify-content: center;
+}
+body:after{ 
+    position: absolute;
+}
+
+header{
+    background: rgba(13, 13, 14, 0.651);
+    height: 80px;
+    justify-content: space-evenly;
+}
+header > button{
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 30px;
+    padding: 2px;
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    border: rgb(255, 255, 255) solid 2px;
+    background: rgba(221, 197, 255, 0.796);
+}
+header > button:hover{
+    color: white;
+    background: rgba(27, 25, 86, 0.822);
+    border: 2px solid rgba(22, 96, 255, 0.894)
+}
+
+footer{
+    margin-top: auto;
+    background: rgb(45, 45, 45);
+    text-align: center;
+}
+
+.grabber{
+    justify-content: center;
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 200px;
+    width: 1300px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left:720px;
+}
+.grabber > pre{
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.pageWrap{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.myPhoto{
+    justify-content: center;
+    margin-left: 1100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.myPhoto > img{
+    border: 2px solid black;
+}
+
+.myIntro{
+    position: relative;
+    width: 900px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(19, 59, 115);
+    text-align: center;
+}
+.myIntro > h1{
+    font-size: 80px;
+}
+.myIntro > h3{
+    font-size: 50px;
+}
+
+.aboutme{
+    position: relative;
+    margin-top: 40px;
+    padding: 5px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(11, 37, 72);
+    text-align: center;
+    font-size: 25px;
+}
+
+.myPortfolio{
+    position: relative;
+    width: 1100px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 4px;
+    background: rgba(255, 153, 18, 0.856);
+}
+
+.myCerts{
+    margin: 60px;
+    margin-right: 50px;
+    padding: 6px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 4px;
+    background: rgba(255, 123, 7, 0.955);
+}
+
+.portfolioNav{
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolioNav > .btn {
+    border: rgb(85, 83, 83);
+    outline: none;
+    padding: 16px 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.portfolioNav > .btn:hover{
+    background-color: rgba(255, 255, 255, 0.729);
+}
+.portfolioNav > .btn.active{
+    background-color: rgba(90, 91, 91, 0.584);
+    border-bottom: solid 5px rgb(255, 255, 255);
+}
+
+.row{
+    position: relative;
+    width: 2100px;
+    right: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    position: relative;
+    background-color: rgb(23, 22, 22);
+    padding: 4px;
+    margin: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    text-wrap: pretty;
+    display: block;
+    width: 680px;
+}
+.content > h1{
+    background-color: rgb(56, 38, 105);
+    margin-bottom: 4px;
+}
+.content > h3{
+    font-size: 24px;
+}
+.content > p{
+    width: 640px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content > a > img{
+    position: relative;
+    height: 600px;
+    width: 670px;
+    background-color: rgb(57, 57, 57);
+    border:1px solid #ececec;
+    border-radius: 2px;
+}
+.content > a > img:hover{
+    box-shadow: 0 0 20px 1px rgba(84, 147, 255, 0.986);
+    background-color: rgba(255, 255, 255, 0.729);
+}
+
+
+.certRow{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contentCert{
+    position: relative;
+    background-color: rgb(23, 22, 22);
+    padding: 4px;
+    margin: 2px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    text-wrap: pretty;
+    display: block;
+    width: 1020px;
+}
+.contentCert > h1{
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 70px;
+    background-color: rgb(52, 2, 71);
+}
+
+.myContact{
+    margin: 60px;
+    padding: 6px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 4px;
+    background: rgba(255,97,3, 0.856);
+}
+
+.userContact{
+   margin: 10px;
+   padding: 10px;
+   margin-left: 150px;
+   height: 300px;
+   width: 1300px;
+   justify-content: left;
+   text-align: center;
+   background: rgba(255,97,3, 0.856);
+}
+
+.contactForm{
+
+}
+
+.contactGrabber{
+
+}
+
+@media (max-width: 600px){
+
+}
+
